@@ -32,7 +32,7 @@ export class Tokenizer {
      */
     console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(this.sp)));
 
-    this.eos = this.sp.eosId ? this.sp.eosId() : 2; // SentencePiece default EOS
+    this.eos = 1; // SentencePiece default EOS
   }
 
   encode(text) {
