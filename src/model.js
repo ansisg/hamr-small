@@ -6,7 +6,7 @@ export class GPT {
   }
 
   async load(modelPath) {
-    ort.env.wasm.wasmPaths = '/hamr/ort/'
+    ort.env.wasm.wasmPaths = '/hamr-small/ort/'
 
     this.session = await ort.InferenceSession.create(modelPath, {
       executionProviders: ["webgpu", "wasm"],
